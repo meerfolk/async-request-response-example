@@ -7,7 +7,7 @@ export class SqliteStorageService {
   private readonly db: DB.Database;
 
   public constructor() {
-    this.db = new DB('tasks');
+    this.db = new DB('tasks.db');
 
     this.db.exec(`
       CREATE TABLE IF NOT EXISTS tasks(
